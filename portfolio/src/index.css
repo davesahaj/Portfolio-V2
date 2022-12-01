@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+
+    @media only screen and (max-width: 678px) {
+        .awssld
+        {
+            height: 100vh;
+        }
+      }
