@@ -5,10 +5,8 @@ module.exports = {
     extend: {
       boxShadow: { custom: "-10px 18px 70px 0px rgba(0, 0, 0, 0.5)" },
       backgroundImage: {
-        "profile-pic": "url('./src/assets/profilepicture.png')",
-        "map": "url('./src/assets/map.webp')",
-        "marker": "url('./src/assets/marker.png')",
-        "footer": "url('./src/assets/footer.svg')",
+        "profile-pic": "url('/profilepicture.webp')",
+        footer: "url('/footer.svg')",
       },
       fontFamily: {
         mulish: ["Mulish", "sans-serif"],
@@ -24,4 +22,5 @@ module.exports = {
     },
   },
   plugins: [],
+  safelist: ["bg-profile-pic", "bg-footer"],
 };

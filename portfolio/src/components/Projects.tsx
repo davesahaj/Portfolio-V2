@@ -13,7 +13,7 @@ const projectItems = [
     id: "cinenights",
     tech: ["rt", "sc", "js", "css", "rd", "ex", "db"],
     title: "Cine Nights",
-    img: ["projectA1.png", "projectA2.png"],
+    img: ["projectA1.webp", "projectA2.webp"],
     description: [
       `A full-stack web application to stream movies in sync using with Express serving a REST API with React as the frontend.`,
       `The live chat service and movie synchronization is implemented using socket.io.`,
@@ -25,7 +25,7 @@ const projectItems = [
     id: "writepro",
     tech: ["rt", "js", "css", "dj"],
     title: "Write Pro",
-    img: ["projectB2.png", "projectB5.png", "projectB4.png", "projectB3.png"],
+    img: ["projectB2.webp", "projectB5.webp", "projectB4.webp", "projectB3.webp"],
     description: [
       `I Collaborated with a team of 4 to develop a research automation tool using django and React for academia.`,
       `I designed responsive data-driven components in the frontend to effectively search information using SPA.`,
@@ -37,7 +37,7 @@ const projectItems = [
     id: "linuxmonitor",
     tech: ["cpp"],
     title: "Linux System Monitor",
-    img: ["projectE.png"],
+    img: ["projectE.webp"],
     description: [
       `A terminal based system monitor built in C++ with NCurses as the display API.`,
       `Optimised to use GPU rendering in alacritty OpenGL emulator.`,
@@ -50,7 +50,7 @@ const projectItems = [
     id: "movementpattern",
     tech: ["htm", "js", "css", "bs", "db", "py", "fl"],
     title: "Movement Analyzer",
-    img: ["projectC1.png", "projectC2.png", "projectC3.png", "projectC4.png"],
+    img: ["projectC1.webp", "projectC2.webp", "projectC3.webp", "projectC4.webp"],
     description: [
       `Developed a data analyzer and a web interface in Bootstrap and flask.`,
       `I worked with PhD researchers to co-relate student movement behavior with academics.`,
@@ -62,7 +62,7 @@ const projectItems = [
     id: "coderscatalogue",
     tech: ["rt", "js", "css", "rd", "bs"],
     title: "Coders Catalogue",
-    img: ["projectD.png"],
+    img: ["projectD.webp"],
     description: [
       `An Open Source Cross Browser Extension built using React, Redux, Bootstrap.`,
       `Coders Catalogue allows users to manage and subscribe to upcoming competitive contests.`,
@@ -82,7 +82,7 @@ const Projects = (props: Props) => {
       interval={2500}
     >
       {projectItems.map((item, index) => (
-        <div className="flex flex-col-reverse justify-end md:justify-start md:flex-row w-full h-full py-20 md:py-0 px-6 lg:px-48 bg-light md:text-right">
+        <div key={index} className="flex flex-col-reverse justify-end md:justify-start md:flex-row w-full h-full py-20 md:py-0 px-6 lg:px-48 bg-light md:text-right">
           <div className="w-full md:w-2/5  md:flex items-end md:pr-10 justify-center flex-col md:relative">
             <h3 className="absolute text-3xl md:text-6xl top-0 md:top-[20%] md:left-5 font-monts mt-6 md:mt-0">{`Project .0${
               index + 1

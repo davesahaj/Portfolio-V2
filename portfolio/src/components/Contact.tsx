@@ -54,7 +54,7 @@ const Contact = (props: Props) => {
 
   return (
     <>
-      <div id='contact' className="bg-dark overflow-hidden lg:h-auto lg:w-screen px-4 md:px-0  text-light flex justify-center relative">
+      <div id='contact' className="bg-dark overflow-x-clip lg:h-auto lg:w-screen px-4 md:px-0  text-light flex justify-center relative">
         <div className=" lg:h-auto">
           <div className="my-16 flex flex-col md:flex-row lg:w-[1050px]">
             <div className="md:w-3/5 ">
@@ -67,11 +67,11 @@ const Contact = (props: Props) => {
                 />
                 <div
                   id="rightConfetti"
-                  className=" absolute bottom-0 right-0"
+                  className=" absolute bottom-1/2 md:bottom-0 right-0"
                 />
                 <div
                   id="rightBaloonConfetti"
-                  className=" absolute bottom-0 right-0 "
+                  className=" absolute bottom-1/2 md:bottom-0 right-0 "
                 />
               </h2>
               <div className="font-mulish text-base md:w-3/4 leading-7">

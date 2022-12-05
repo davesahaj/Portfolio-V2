@@ -7,7 +7,7 @@ const workExp = [
     desc: "Developed React based progressive web app storefront components to faciliate wishlist items and cart checkout. Implemented contentful models allowing consistent information to be re-synced in storefront and CMS. Created caching solution using lodash and memoization techniques to significantly improve performance.",
   },
   {
-    year: "Sept 2022 - Feb 2022",
+    year: "Sept 2021 - Feb 2022",
     company: "Tribal Desert",
     desc: "Freelanced for a B2B shipping startup to work on their pilot E-Commerce project. My task was to update the existing code in a reusable scalable format using styled components and SASS along with creating custom hooks for caching purposes and implementing Redux.",
   },
@@ -39,7 +39,7 @@ const Portfolio = (props: Props) => {
         </h4>
 
         {workExp.map((item, index) => (
-          <div
+          <div key={index}
             className={`flex flex-col md:flex-row items-center md:items-start text-light font-roboto mb-24 ${
               index % 2 === 0 ? "" : "md:flex-row-reverse"
             }`}
