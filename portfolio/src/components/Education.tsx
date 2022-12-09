@@ -5,6 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import { SiHackerrank } from "react-icons/si";
+import { TbLetterT } from "react-icons/tb";
 import {
   FaCuttlefish,
   FaUniversity,
@@ -147,6 +148,34 @@ const Education = (props: Props) => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://www.hackerrank.com/certificates/dd5c26bb3e45"
+                  >
+                    <FaExternalLinkSquareAlt />
+                  </a>
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                position="right"
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "#3fa5d1", color: "#fff" }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  #3fa5d1",
+                }}
+                iconStyle={{ background: "#3fa5d1", color: "#fff" }}
+                icon={<TbLetterT />}
+              >
+                <h3 className="vertical-timeline-element-title">
+                  TripleByte certified Engineer
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                TripleByte
+                </h4>
+                <p className="flex justify-start items-center gap-2">
+                  ID: aHWfHbh{" "}
+                  <a
+                    className="text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://triplebyte.com/tb/sahaj-dave-nvxktwb/certificate"
                   >
                     <FaExternalLinkSquareAlt />
                   </a>
