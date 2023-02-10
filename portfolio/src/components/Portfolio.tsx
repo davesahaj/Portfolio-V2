@@ -2,6 +2,11 @@ type Props = {};
 
 const workExp = [
   {
+    year: "Dev 2022 - Present",
+    company: "TechLadd",
+    desc: "Frontend Engineer at Sprih Labs(client). My role includes React optimisations, refactoring, code reviews and development.",
+  },
+  {
     year: "Apr 2022 - Nov 2022",
     company: "Mcfadyen Digital",
     desc: "Developed React based progressive web app storefront components to faciliate wishlist items and cart checkout. Implemented contentful models allowing consistent information to be re-synced in storefront and CMS. Created caching solution using lodash and memoization techniques to significantly improve performance.",
@@ -40,14 +45,12 @@ const Portfolio = (props: Props) => {
 
         {workExp.map((item, index) => (
           <div key={index}
-            className={`flex flex-col md:flex-row items-center md:items-start text-light font-roboto mb-24 ${
-              index % 2 === 0 ? "" : "md:flex-row-reverse"
-            }`}
+            className={`flex flex-col md:flex-row items-center md:items-start text-light font-roboto mb-24 ${index % 2 === 0 ? "" : "md:flex-row-reverse"
+              }`}
           >
             <div
-              className={`flex flex-col items-center  ${
-                index % 2 === 0 ? "md:items-end" : "md:items-start"
-              }`}
+              className={`flex flex-col items-center  ${index % 2 === 0 ? "md:items-end" : "md:items-start"
+                }`}
             >
               <h3 className="text-xl font-semibold font-mulish">
                 {item.company}
@@ -56,9 +59,8 @@ const Portfolio = (props: Props) => {
             </div>
             <div className="w-[3px] md:w-[6px] h-[80px] md:h-[38px]  bg-light md:mt-1 md:mx-6 rotate-90 md:rotate-0" />
             <div
-              className={`px-4 md:px-0 md:w-3/4 text-center ${
-                index % 2 === 0 ? "md:text-left" : "md:text-right"
-              }`}
+              className={`px-4 md:px-0 md:w-3/4 text-center ${index % 2 === 0 ? "md:text-left" : "md:text-right"
+                }`}
             >
               {item.desc}
             </div>
